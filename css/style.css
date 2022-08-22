@@ -25,6 +25,7 @@ body {
     margin-top: 0.5em;
 }
 
+/* Board of Game  */
 *,
 *::after,
 *::before {
@@ -32,7 +33,7 @@ body {
 }
 
 :root {
-    --cell-size: 100px;
+    --cell-size: 120px;
     --mark-size: calc(var(--cell-size) * .9);
 }
 
@@ -44,7 +45,8 @@ body {
     align-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-columns: repeat(3, auto)
+    grid-template-columns: repeat(3, auto);
+    font-family: 'Tsuki';
 }
 
 .cell {
@@ -86,13 +88,14 @@ body {
 .cell.x::before,
 .cell.x::after,
 .cell.circle::before {
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color: white;
+    background-color: lightgray;
+    opacity: 50%;
 }
 
 .cell.x::before,
@@ -134,5 +137,45 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
-    background-color: white;
+    background-color: blue;
 }
+
+/* End of Board */
+
+/* Winn Message */
+
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+  }
+  
+  .winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+  }
+  
+  .winning-message button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+  }
+  
+  .winning-message.show {
+    display: flex;
+  }
+
+  /* End Win Message */
+
