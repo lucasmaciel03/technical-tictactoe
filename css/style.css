@@ -46,7 +46,6 @@ body {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, auto);
-    font-family: 'Tsuki';
 }
 
 .cell {
@@ -64,10 +63,12 @@ body {
 .cell:nth-child(2),
 .cell:nth-child(3) {
     border-top: none;
+    
 }
 
 .cell:nth-child(3n + 1) {
     border-left: none;
+    
 }
 
 .cell:nth-child(3n + 3) {
@@ -125,6 +126,7 @@ body {
     content: '';
     position: absolute;
     border-radius: 50%;
+    
 }
 
 .cell.circle::before,
@@ -176,12 +178,12 @@ body {
   
   .button a{
     color:white;
-    font-family: 'Tsuki';
+    font-family:Helvetica, sans-serif;
     font-weight:bold;
-    font-size:36px;
+    font-size:20px;
     text-align: center;
     text-decoration:none;
-    background-color:#000;
+    background-color:#FFA12B;
     display:block;
     position:relative;
     padding:20px 40px;
@@ -201,7 +203,8 @@ body {
   
   .button a:active{
     top:10px;
-    background-color:#000;
+    background-color:#F78900;
+    
     -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
     -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
     box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
