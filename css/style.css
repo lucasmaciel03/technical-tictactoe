@@ -139,7 +139,7 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
-    background-color: black;
+    background-color: black∏∏∏;
 }
 
 /* End of Board */
