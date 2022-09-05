@@ -6,7 +6,7 @@ Hello and Welcome to my first repository on GitHub.
 
 For my first repository I decided to create the famous game *Tic Tac Toe*.
 
-The game can be played through the link: <a href="https://lucasmaciel03.github.io/TicTacToe/" target="_blank">TicTacToe</a>, enjoy.
+The game can be played through the link: <a href="https://lucasmaciel03.github.io/TicTacToe/" target="blank">TicTacToe</a>, enjoy.
 
 ## Tecnologies
 
